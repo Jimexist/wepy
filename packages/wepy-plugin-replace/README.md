@@ -18,7 +18,7 @@ module.exports.plugins = {
         filter: /moment\.js$/,
         config: {
             find: /([\w\[\]a-d\.]+)\s*instanceof Function/g,
-            replace: function (matchs, word) {
+            replace: function (matches, word) {
                 return ' typeof ' + word + " ==='function' ";
             }
         }
@@ -31,7 +31,7 @@ module.exports.plugins = {
         filter: /moment\.js$/,
         config: {
             find: /([\w\[\]a-d\.]+)\s*instanceof Function/g,
-            replace: function (matchs, word) {
+            replace: function (matches, word) {
                 return ' typeof ' + word + " ==='function' ";
             }
         }
@@ -53,11 +53,11 @@ module.exports.plugins = {
             filter: /moment\.js$/,
             config: {
                 find: /([\w\[\]a-d\.]+)\s*instanceof Function/g,
-                replace: function (matchs, word) {
+                replace: function (matches, word) {
                     return ' typeof ' + word + " ==='function' ";
                 }
             }
-        }, 
+        },
         'fix-other': {
             filter: /anotherfile\.js$/,
             config: {
